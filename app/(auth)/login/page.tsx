@@ -8,26 +8,27 @@ export default function LoginPage() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-xl">Selamat Datang</CardTitle>
+        <CardTitle className="text-xl item-center">Selamat Datang</CardTitle>
         <CardDescription>Silahkan Masuk Untuk Melanjutkan</CardDescription>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="flex flex-col gap-4">
         <Button className="w-full" variant="outline">
           <GithubIcon className="size-4 mr-2" />
           Sign in with github
         </Button>
         <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
           <span className="relative z-10 bg-card px-2">
-            lanjutkan dengan
+            atau
           </span>
         </div>
 
         <div className="grid gap-3 ">
-          <div className="">
+          <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
             <Input type="email" placeholder="mail@example.com" />
           </div>
+          <Button>Masuk meggunankan email</Button>
         </div>
       </CardContent>
     </Card>
